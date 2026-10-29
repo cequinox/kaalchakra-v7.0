@@ -8,7 +8,13 @@ import os
 from datetime import datetime, timezone, timedelta
 from typing import Dict, Any, Optional
 
-from mcp.server.fastmcp import FastMCP
+try:
+    from mcp.server.fastmcp import FastMCP
+except (ImportError, ModuleNotFoundError):
+    try:
+        from mcp.server.mcpserver import MCPServer as FastMCP
+    except Exception:
+        from mcp.server import Server as FastMCP
 from astro_engine import (
     calculate_kundali,
     calculate_panchanga,
