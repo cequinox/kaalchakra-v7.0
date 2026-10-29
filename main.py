@@ -26,10 +26,6 @@ app = FastAPI(
     version=__VERSION__
 )
 
-# Mount FastMCP SSE Server for AI Agents
-app.mount("/sse", mcp.sse_app())
-app.mount("/mcp", mcp.sse_app())
-
 # CORS Middleware
 app.add_middleware(
     CORSMiddleware,
@@ -134,6 +130,9 @@ async def get_quota():
         "available_quota": "UNLIMITED",
         "rate_limit": "None (Self-Hosted)"
     }
+
+# Mount FastMCP SSE Server at root for AI Agents (/sse and /messages)
+app.mount("", mcp.sse_app())
 
 if __name__ == "__main__":
     import uvicorn
