@@ -18,12 +18,17 @@ from astro_engine import (
     calculate_julian_day,
     __VERSION__
 )
+from server import mcp
 
 app = FastAPI(
     title="Kaalchakra Core API",
     description="High-Precision JyotirVidya Computation Core (v7.0.0)",
     version=__VERSION__
 )
+
+# Mount FastMCP SSE Server for AI Agents
+app.mount("/sse", mcp.sse_app())
+app.mount("/mcp", mcp.sse_app())
 
 # CORS Middleware
 app.add_middleware(
