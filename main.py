@@ -131,6 +131,15 @@ async def get_quota():
         "rate_limit": "None (Self-Hosted)"
     }
 
+# Configure FastMCP cloud allowed hosts for SSE
+if hasattr(mcp, "settings") and hasattr(mcp.settings, "transport_security"):
+    mcp.settings.transport_security.allowed_hosts.extend([
+        "kalchakra-core.onrender.com",
+        "kalchakra-core.onrender.com:*",
+        "*.onrender.com",
+        "*.onrender.com:*"
+    ])
+
 # Mount FastMCP SSE Server at root for AI Agents (/sse and /messages)
 app.mount("", mcp.sse_app())
 
