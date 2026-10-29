@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: kalchakra-core
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /healthz
+    autoDeploy: true
+    envVars:
+      - key: PYTHONIOENCODING
+        value: utf-8
+      - key: HOST
+        value: 0.0.0.0
