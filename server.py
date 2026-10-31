@@ -70,10 +70,6 @@ def show_welcome_and_language_menu(user_name: Optional[str] = None) -> str:
         "  [ 4 ] Core Astronomical Formulas & Full Source Code Download\n\n"
         f"⚡ System Status: Active & Online (Kaalchakra Core v{__VERSION__})\n"
         f"📊 Daily Fair-Use Quota: {q['credits_remaining']} / {q['daily_limit']} Credits Remaining Today (Resets 00:00 UTC)\n"
-        "📊 License: GNU AGPLv3 (Free & Open Source)\n"
-        "🔓 Formulas & Code: 100% Free & Open Access (0 Quota Cost)\n"
-        "📦 Source Code ZIP: https://kalchakra-core.onrender.com/download/source.zip\n"
-        "🐙 GitHub Repo: https://github.com/cequinox/kaalchakra-v7.0.git\n"
         "📫 Customer Support: support@kaalchakra.com | Enterprise: enterprise@kaalchakra.com\n"
         "================================================================================"
     )
