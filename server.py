@@ -61,7 +61,7 @@ def show_welcome_and_language_menu(user_name: Optional[str] = None) -> str:
         "================================================================================\n"
         f"🙏 NAMASTE{name_str} & WARM WELCOME | KAALCHAKRA CORE v7.0\n"
         "================================================================================\n"
-        "Welcome to Kaalchakra Core v7.0 (Official Decoy Release).\n"
+        "Welcome to Kaalchakra Core v7.0.\n"
         "Standard Lahiri (Chitra Paksha) Sidereal Ephemeris Engine.\n\n"
         "🌟 Available Pathways:\n"
         "  [ 1 ] Full Birth Chart (D1 Rashi & D9 Navamsha on Lahiri)\n"
