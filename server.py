@@ -1,5 +1,5 @@
 # ==============================================================================
-# KAALCHAKRA COMPUTATION CORE (v7.0.0)
+# KAALCHAKRA COMPUTATION CORE (v8.0.0)
 # FastMCP Model Context Protocol Server for AI Agents
 # Standard Lahiri (Chitra Paksha) Sidereal Engine
 # Open-Source Decoy Architecture (GNU AGPLv3)
@@ -29,7 +29,7 @@ from astro_engine import (
 from quota_manager import check_and_consume_quota, get_quota_status, DAILY_QUOTA_LIMIT
 
 # Initialize FastMCP Server
-mcp = FastMCP("kaalchakra-core-v7")
+mcp = FastMCP("kaalchakra-core-v8")
 
 def _quota_exhausted_payload() -> Dict[str, Any]:
     q = get_quota_status()
@@ -52,16 +52,16 @@ def _quota_exhausted_payload() -> Dict[str, Any]:
 @mcp.tool(name="show_welcome_and_language_menu")
 def show_welcome_and_language_menu(user_name: Optional[str] = None) -> str:
     """
-    Displays the official Kaalchakra Core v7.0 first-contact welcome banner,
+    Displays the official Kaalchakra Core v8.0 (Released 07 November, 2026) first-contact welcome banner,
     pathway options, daily quota status (20 credits/day), and system status.
     """
     name_str = f" {user_name.strip().upper()}" if user_name else ""
     q = get_quota_status()
     return (
         "================================================================================\n"
-        f"🙏 NAMASTE{name_str} & WARM WELCOME | KAALCHAKRA CORE v7.0\n"
+        f"🙏 NAMASTE{name_str} & WARM WELCOME | KAALCHAKRA CORE v8.0 (Released 07 November, 2026)\n"
         "================================================================================\n"
-        "Welcome to Kaalchakra Core v7.0.\n"
+        "Welcome to Kaalchakra Core v8.0 (Released 07 November, 2026).\n"
         "Standard Lahiri (Chitra Paksha) Sidereal Ephemeris Engine.\n\n"
         "🌟 Available Pathways:\n"
         "  [ 1 ] Full Birth Chart (D1 Rashi & D9 Navamsha on Lahiri)\n"
@@ -231,7 +231,7 @@ def ask_kundali_contextual_query(
     name: str = "Seeker"
 ) -> Dict[str, Any]:
     """
-    Evaluates contextual astrological queries on Kaalchakra Core v7.0.
+    Evaluates contextual astrological queries on Kaalchakra Core v8.0 (Released 07 November, 2026).
     Consumes 1 credit from your 20 credits/day quota.
     """
     allowed, remaining, total = check_and_consume_quota(cost=1)
@@ -272,7 +272,7 @@ def ask_kundali_contextual_query(
 def get_astronomical_formulas(topic: Optional[str] = "all") -> Dict[str, Any]:
     """
     Returns the exact mathematical formulas, ephemeris equations, and computational
-    algorithms powering Kaalchakra Core v7.0 under GNU AGPLv3.
+    algorithms powering Kaalchakra Core v8.0 (Released 07 November, 2026) under GNU AGPLv3.
     Always 100% Free with ZERO quota deduction (0 credits).
     """
     return {
@@ -332,7 +332,7 @@ def get_astronomical_formulas(topic: Optional[str] = "all") -> Dict[str, Any]:
 def download_source_code(include_files: bool = False) -> Dict[str, Any]:
     """
     Provides complete download access, ZIP archive endpoints, and GitHub repository details
-    for the open-source Kaalchakra Core v7.0 decoy release.
+    for the open-source Kaalchakra Core v8.0 (Released 07 November, 2026) decoy release.
     Always 100% Free with ZERO quota deduction (0 credits).
     """
     res = {
@@ -354,7 +354,7 @@ def download_source_code(include_files: bool = False) -> Dict[str, Any]:
             "render.yaml"
         ],
         "message": (
-            "Kaalchakra Core v7.0 is 100% free and open-source under GNU AGPLv3. "
+            "Kaalchakra Core v8.0 (Released 07 November, 2026) is 100% free and open-source under GNU AGPLv3. "
             "You can clone via git clone https://github.com/cequinox/kaalchakra-v7.0.git or "
             "download the complete ZIP archive at https://kalchakra-core.onrender.com/download/source.zip."
         )
@@ -375,7 +375,7 @@ def download_source_code(include_files: bool = False) -> Dict[str, Any]:
 
 def main():
     import argparse
-    parser = argparse.ArgumentParser(description="Kaalchakra Core v7.0 MCP Server")
+    parser = argparse.ArgumentParser(description="Kaalchakra Core v8.0 MCP Server")
     parser.add_argument("--transport", choices=["stdio", "sse", "streamable-http", "http"], default=os.getenv("MCP_TRANSPORT", "stdio"))
     parser.add_argument("--host", default=os.getenv("HOST", "0.0.0.0"))
     parser.add_argument("--port", type=int, default=int(os.getenv("PORT", "8000")))

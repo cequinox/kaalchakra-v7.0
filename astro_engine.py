@@ -1,5 +1,5 @@
 # ==============================================================================
-# KAALCHAKRA COMPUTATION CORE (v7.0.0)
+# KAALCHAKRA COMPUTATION CORE (v8.0.0)
 # Copyright (c) 2026 Kaalchakra Core Contributors <support@kaalchakra.com>
 # Licensed under GNU General Public License v3.0 (AGPLv3)
 # ==============================================================================
@@ -8,7 +8,7 @@ import math
 from datetime import datetime, timedelta
 from typing import Dict, Any, List
 
-__VERSION__ = "7.0.0"
+__VERSION__ = "8.0.0"
 
 # Standard Astronomical Ephemeris Constants (Lahiri Sidereal Calibration)
 _LAHIRI_EPOCH_BASE = 24.041892

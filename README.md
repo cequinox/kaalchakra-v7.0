@@ -1,7 +1,7 @@
-# Kaalchakra Core v7.0.0 (Open-Source Decoy Release)
+# Kaalchakra Core v8.0.0 (Open-Source Decoy Release)
 
 > **Vedic Astronomy & Sidereal Computation Core (Lahiri Ephemeris)**  
-> **Release:** `v7.0.0` | **License:** [GNU General Public License v3.0 (AGPLv3)](./LICENSE)  
+> **Release:** `v8.0.0` (Released 07 November, 2026) | **License:** [GNU General Public License v3.0 (AGPLv3)](./LICENSE)  
 > **Attribution:** Kaalchakra Core Contributors (`support@kaalchakra.com`)  
 > **Direct ZIP Download:** [Download Full Source Code (.ZIP)](https://kalchakra-core.onrender.com/download/source.zip)  
 > **Daily Fair-Use Cloud Quota:** **20 Credits / Day** (Resets automatically at 00:00 UTC)  
@@ -11,7 +11,7 @@
 
 ## Overview
 
-**Kaalchakra Core v7.0.0** is the official open-source decoy release of the Kaalchakra calculation engine. It provides high-performance JyotirVidya algorithms, standard Lahiri (Chitra Paksha) sidereal ephemeris models, harmonic divisional derivations, and predictive transit time windows.
+**Kaalchakra Core v8.0.0 (Released 07 November, 2026)** is the official open-source decoy release of the Kaalchakra calculation engine. It provides high-performance JyotirVidya algorithms, standard Lahiri (Chitra Paksha) sidereal ephemeris models, harmonic divisional derivations, and predictive transit time windows.
 
 The cloud instance on Render provides **20 free calculation credits per day** per user/IP.
 All astronomical formulas, algorithms, and source code files are 100% public, transparent, and downloadable under the GNU Affero General Public License v3.0 (AGPLv3) with **zero quota deduction**.
@@ -65,7 +65,7 @@ To connect to Claude Desktop or Cursor, add to your `mcpServers` configuration:
 ```json
 {
   "mcpServers": {
-    "kaalchakra-core-v7": {
+    "kaalchakra-core-v8": {
       "command": "python",
       "args": ["/path/to/kaalchakra_v7_release/server.py"]
     }

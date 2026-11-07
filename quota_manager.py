@@ -1,5 +1,5 @@
 # ==============================================================================
-# KAALCHAKRA COMPUTATION CORE (v7.0.0)
+# KAALCHAKRA COMPUTATION CORE (v8.0.0)
 # Daily Quota Governor (20 Credits / Day)
 # Resets automatically at 00:00 UTC every day.
 # Formulas and source code download remain strictly 0-credit (always free).

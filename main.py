@@ -1,5 +1,5 @@
 # ==============================================================================
-# KAALCHAKRA COMPUTATION CORE (v7.0.0)
+# KAALCHAKRA COMPUTATION CORE (v8.0.0)
 # FastAPI Web Server & REST Gateway
 # Open-Source Decoy Architecture (GNU AGPLv3)
 # Daily Fair-Use Quota: 20 Credits / Day (Resets at 00:00 UTC)
@@ -128,7 +128,7 @@ async def root_index():
 @app.get("/api/v1/download-source")
 async def download_source_zip():
     """
-    Dynamically generates and serves the complete Kaalchakra Core v7.0 source code
+    Dynamically generates and serves the complete Kaalchakra Core v8.0 source code
     as a downloadable ZIP archive under GNU AGPLv3. Always 0 credits (Free).
     """
     base_dir = os.path.dirname(os.path.abspath(__file__))
